@@ -21,3 +21,10 @@ user.speak();
 console.log(Function.prototype.isPrototypeOf(user.speak));	// true
 user.speak.hasOwnProperty('apply');							// false
 user.speak.__proto__.hasOwnProperty('apply');				// true
+
+/**
+ * 생성자 함수 호출: new Uesr()
+ * 직접 함수 호출: ask()
+ * 메소드 호출: user.speak()
+ * 컨텍스트 변경 호출: ask.call(this) or ask.apply(this)
+ */
