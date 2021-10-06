@@ -17,3 +17,7 @@ function User(name) {
 var name = 'Unknown';
 var user = new User('Ted');
 user.speak();
+
+console.log(Function.prototype.isPrototypeOf(user.speak));	// true
+user.speak.hasOwnProperty('apply');							// false
+user.speak.__proto__.hasOwnProperty('apply');				// true
