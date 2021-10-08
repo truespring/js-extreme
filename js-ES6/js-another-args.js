@@ -1,6 +1,6 @@
 
 // ES5에서 arguments 활용
-fucntion workout(exercise1) {
+function workout(exercise1) {
 	var todos = Array.prototype.slice.call(arguments, workout.length);
 	console.log('Start from ' + exercise1);
 	console.log(todos.length + ' more to do');
